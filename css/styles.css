@@ -1,58 +1,62 @@
-:root {
-  --main: #0d6efd;
-  --bg: #f8f9fa;
-  --text: #212529;
-}
+/* Style général */
 body {
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  margin: 0;
-}
-.avatar {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-}
-section {
-  background: white;
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-}
-.footer {
-  text-align: center;
-  padding: 1rem;
-  color: #777;
-}
-body {
+  font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f8f9fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.avatar {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 4px solid #0d6efd;
+/* En-tête */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 30px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Sections principales */
+section {
+  margin: 40px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
 }
 
 h2 {
-  color: #0d6efd;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
 }
 
-.copy-email {
-  color: #0d6efd;
+/* Listes */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+footer a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+footer a:hover {
   text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.copy-email:hover {
-  color: #0a58ca;
-}
-
-.copy-email:focus {
-  outline: 3px solid rgba(13, 110, 253, 0.3);
-  outline-offset: 2px;
 }
