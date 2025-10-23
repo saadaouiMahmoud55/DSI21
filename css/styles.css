@@ -60,3 +60,13 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+body {
+  scroll-behavior: smooth;
+}
+h1, h2 {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
