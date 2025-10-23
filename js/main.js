@@ -11,10 +11,10 @@ try {
 }
 
 async function copyAndSaveEmail(email) {
-    try {
+try {
     if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(email);
-    } else {
+}else {
         const textarea = document.createElement('textarea');
         textarea.value = email;
         document.body.appendChild(textarea);
@@ -22,14 +22,17 @@ async function copyAndSaveEmail(email) {
         document.execCommand('copy');
         document.body.removeChild(textarea);
     }
-    const record = { email, savedAt: new Date().toISOString() };
-    localStorage.setItem('savedEmail', JSON.stringify(record));
+
+const record = { email, savedAt: new Date().toISOString() };
+localStorage.setItem('savedEmail', JSON.stringify(record));
+
     if (bsToast) {
         bsToast.show();
     } else {
         alert('Email copié et sauvegardé ✓');
-    }
-    } catch (err) { alert("Impossible de copier l'email. Copiez-le manuellement : " + email);
+}
+    } catch (err) {
+alert("Impossible de copier l'email. Copiez-le manuellement : " + email);
     }
 }
 
