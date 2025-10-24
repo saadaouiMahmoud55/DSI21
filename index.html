@@ -2,28 +2,79 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Mahmoud</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-  <header>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Je suis <strong>Saadaoui Mahmoud</strong>, étudiant en DSI.</p>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Mahmoud Portfolio</a>
+    </div>
+  </nav>
+  
+  <header class="text-center py-5 bg-white shadow-sm">
+    <img src="photo_mahmoud.jpeg" alt="Photo Mahmoud" class="rounded-circle mb-3" width="150" height="150">
+    <h1 class="text-primary">Bienvenue sur mon Portfolio</h1>
+    <p class="lead text-muted">Je suis <strong>Saadaoui Mahmoud</strong>, étudiant en DSI.</p>
+    <a href="Mahmoud.pdf" download class="btn btn-primary mt-3">📄 Télécharger mon CV</a>
   </header>
-
-  <section>
-    <h2>Mes projets</h2>
-    <ul>
-      <li>Projet 1 : Application web</li>
-      <li>Projet 2 : Mini site</li>
-    </ul>
+  
+  <section class="container my-5">
+    <h2 class="text-center text-primary mb-4">Mes Projets</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Projet 1</h5>
+            <p class="card-text">Application web de gestion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Projet 2</h5>
+            <p class="card-text">Mini site vitrine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email : <span>mahmoudsaadaui55@gmail.com</span></p>
+  
+  <section class="bg-white py-5">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4">Mes Compétences</h2>
+      <div class="row text-center">
+        <div class="col-md-3 col-6 mb-3">
+          <div class="border rounded p-3 shadow-sm">HTML / CSS</div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="border rounded p-3 shadow-sm">JavaScript</div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="border rounded p-3 shadow-sm">Java</div>
+        </div>
+        <div class="col-md-3 col-6 mb-3">
+          <div class="border rounded p-3 shadow-sm">MySQL</div>
+        </div>
+      </div>
+    </div>
   </section>
-
+  
+  <section class="text-center py-5">
+    <h2 class="text-primary mb-3">Voir mon CV en ligne</h2>
+    <iframe src="Mahmoud.pdf" width="80%" height="600px" class="shadow-sm border rounded">
+      Votre navigateur ne supporte pas l'affichage des PDF.
+      <a href="Mahmoud.pdf" target="_blank">Cliquez ici pour télécharger le CV</a>
+    </iframe>
+  </section>
+  
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p>📧 Contact : <a href="mailto:mahmoudsaadaui55@gmail.com" class="text-white text-decoration-underline">mahmoudsaadaui55@gmail.com</a></p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
